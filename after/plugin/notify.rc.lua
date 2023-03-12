@@ -1,6 +1,2 @@
-local status, notify = pcall(require, 'nvim-notify')
-if (not status) then return end
+vim.notify = require('notify')
 
-require('notify').setup({
-  background_colour = 'Normal',
-})

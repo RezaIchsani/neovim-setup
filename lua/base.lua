@@ -7,8 +7,6 @@ vim.opt.termguicolors = true
 
 vim.wo.number = true
 
-vim.notify = require('notify')
-
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.hlsearch = true
