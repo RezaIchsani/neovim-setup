@@ -59,9 +59,16 @@ return require('packer').startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
 
   -- Notify
-  use 'rcarriga/nvim-notify' -- in my neovim this not working :(
+  use {
+    'rcarriga/nvim-notify',
+    even = 'BufEnter',
+    config = function()
+      vim.defer_fn(function()
+        require('nvim-notify')
+      end, 2000)
+    end,
+  } -- in my neovim this not working :(
   -- Git
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim'
-
 end)
