@@ -6,3 +6,5 @@ nvim.notify.setup {
   timeout = 1500,
   background_color = '#2e3440',
 }
+
+vim.notify = nvim_notify
