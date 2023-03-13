@@ -71,6 +71,14 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim'
 
+  -- Comment nvim
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end
