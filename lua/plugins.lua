@@ -51,7 +51,7 @@ return require('packer').startup(function(use)
 
   use 'windwp/nvim-ts-autotag'
   use 'windwp/nvim-autopairs'
-
+  use 'HiPhish/nvim-ts-rainbow2'
   -- File browser
   -- Telescope file browser
   use 'nvim-lua/plenary.nvim'
@@ -59,6 +59,13 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
   -- Nvim tree
   use 'nvim-tree/nvim-tree.lua' -- Alternative file browser
+  use {
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v2.x',
+    requires = {
+      'MunifTanjim/nui.nvim',
+    }
+  }
 
   -- Bufferline
   use 'akinsho/bufferline.nvim'
@@ -66,6 +73,7 @@ return require('packer').startup(function(use)
 
   -- Notify
   use 'rcarriga/nvim-notify'
+  use 'folke/trouble.nvim'
 
   -- Git
   use 'lewis6991/gitsigns.nvim'

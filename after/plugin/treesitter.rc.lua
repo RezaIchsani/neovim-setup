@@ -2,6 +2,14 @@ local status, ts = pcall(require, 'nvim-treesitter.configs')
 if (not status) then return end
 
 ts.setup {
+  -- nvim-ts-rainbow
+  rainbow = {
+    enable = true,
+    query = 'rainbow-parens',
+    strategy = require 'ts-rainbow.strategy.global',
+  },
+  -- end rainbow
+
   highlight = {
     enable = true,
     disable = {},
