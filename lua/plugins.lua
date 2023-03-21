@@ -51,7 +51,8 @@ return require('packer').startup(function(use)
 
   use 'windwp/nvim-ts-autotag'
   use 'windwp/nvim-autopairs'
-  use 'HiPhish/nvim-ts-rainbow2'
+  use 'HiPhish/nvim-ts-rainbow2' -- rainbow
+
   -- File browser
   -- Telescope file browser
   use 'nvim-lua/plenary.nvim'
