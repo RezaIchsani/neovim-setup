@@ -2,7 +2,7 @@ local status, onedark = pcall(require, 'onedark')
 if (not status) then return end
 
 require('onedark').setup {
-  style = 'cool', -- Choose one 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+  style = 'warm', -- Choose one 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
   transparent = true,
   term_colors = true,
   ending_tildes = false,        -- Show the end-of-buffer tildes.

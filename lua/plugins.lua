@@ -88,6 +88,17 @@ return require('packer').startup(function(use)
     end
   }
 
+  -- Markdown
+  use {
+    "iamcco/markdown-preview.nvim",
+    run = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+    ft = "markdown",
+    cmd = { "MarkdownPreview" },
+    requires = { "zhaozg/vim-diagram", "aklt/plantuml-syntax" },
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end
